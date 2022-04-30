@@ -1,8 +1,8 @@
 import React from 'react'
-import MainFooter from '../components/MainFooter';
+import MainFooter from '../components/MainFooter'
 import MainHeader from '../components/MainHeader'
 
-function Register() {
+export default function Agreement() {
   return (
     <div className="bg-[#E5ECFA]/100 h-3/4">
       <MainHeader />
@@ -26,18 +26,18 @@ function Register() {
                                             </svg>
                                         </div>                                        
                                     </div>
-                                    <div class="flex-auto border-t-2 transition duration-500 ease-in-out border-gray-300"></div>
-                                    <div class="flex items-center text-gray-500 relative">
-                                        <div class="rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 border-gray-300">
+                                    <div class="flex-auto border-t-2 transition duration-500 ease-in-out border-[#240155]/50"></div>
+                                    <div class="flex items-center text-white relative">
+                                        <div class="rounded-full transition duration-500 ease-in-out h-12 w-12 py-3  bg-[#240155]/100 border-2 border-[#240155]/100">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark ">
                                                 <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
                                             </svg>
                                         </div>                                        
                                     </div>
-                                    <div class="flex-auto border-t-2 transition duration-500 ease-in-out border-gray-300"></div>
+                                    <div class="flex-auto border-t-2 transition duration-500 ease-in-out border-[#240155]/50"></div>
                                    
-                                    <div class="flex items-center text-gray-500 relative">
-                                        <div class="rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 border-gray-300">
+                                    <div class="flex items-center text-white relative">
+                                        <div class="rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 bg-[#240155]/100 border-2 border-[#240155]/100">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail ">
                                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                                 <polyline points="22,6 12,13 2,6"></polyline>
@@ -49,7 +49,7 @@ function Register() {
                             </div>
 
                             <div class="flex flex-col items-center pt-10 space-y-4 max-w-lg mx-auto">
-                                <h1 class="font-bold text-lg text-gray-700 w-4/6 text-center">Personal Details</h1>
+                                <h1 class="font-bold text-lg text-gray-700 w-4/6 text-center">Subscription & Agreement</h1>
                                 <p class="text-sm text-gray-500 text-center w-5/6">Please type carefully and fill out the form with Personal details. You can't edit these details once you submit the form.</p>
                             </div> 
 
@@ -226,8 +226,3 @@ function Register() {
     </div>
   )
 }
-
-export default Register;
-
-
-
