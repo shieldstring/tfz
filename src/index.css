@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@-webkit-keyframes up-down {
+  0% {
+      transform: translateY(10px);
+  }
+
+  100% {
+      transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+      transform: translateY(10px);
+  }
+
+  100% {
+      transform: translateY(-10px);
+  }
+}
