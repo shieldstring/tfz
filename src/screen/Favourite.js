@@ -55,166 +55,259 @@ export default function Favourite() {
                                 </div> 
 
                                 <div class="mt-8 p-4">
-                                    <div>                                    
-                                        <div class="flex flex-col md:flex-row">
-                                            <div class="w-full flex-1 mx-2 svelte-1l8159u">
-                                                <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
-                                                    <input placeholder="First Name" class="p-1 px-2 appearance-none outline-none w-full text-gray-800" /> </div>
-                                            </div>
-                                            <div class="w-full flex-1 mx-2 svelte-1l8159u">
-                                                <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
-                                                    <input placeholder="Last Name" class="p-1 px-2 appearance-none outline-none w-full text-gray-800" /> </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="flex flex-col md:flex-row pt-8">
-                                            <div class="w-full mx-2 flex-1 svelte-1l8159u">
-                                                
-                                                <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
-                                                    <input placeholder="E-mail" class="p-1 px-2 appearance-none outline-none w-full text-gray-700" /> </div>
-                                            </div>
-                                            <div class="w-full mx-2 flex-1 svelte-1l8159u">
-                                                {/* <div class="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase"> Your Email</div> */}
-                                                <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
-                                                    <input placeholder="password" class="p-1 px-2 appearance-none outline-none w-full text-gray-800" type="password" /> 
-                                                    <div class="flex -mr-px">
-                                                    <span
-                                                        class="flex items-center leading-normal bg-white rounded rounded-l-none border-0 px-3 whitespace-no-wrap text-gray-600"
-                                                        >
-                                                        <button class="text-base hover:scale-110 focus:outline-none flex justify-center py-1 rounded cursor-pointer                                 
-                                                        hover:bg-gray-300 shadow-inner rounded-lg
-                                                        bg-gray-200 text-gray-500
-                                                        duration-200 ease-in-out 
-                                                        transition">
-                                                            <div class="font-sans text-sm font-light  px-3">Show</div>
-                                                        </button>
-                                                        </span>
+                                
+                                    <div class="w-full border">
+                                        <section class="max-w-6xl mx-auto  ">
+                                            <div class="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 ">
+                                                <div class="w-full border  sahdow-lg p-8  flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/arsenal-logo-vector-200x200 1.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">arsenal</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="flex flex-col md:flex-row pt-4">
-                                            <div class="w-full mx-2 flex-1 svelte-1l8159u">
-                                            <label class="text-gray-600 font-normal text-sm mb-2 ml-1"></label>
-                                                <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
-                                                    <select class="form-select w-full px-3 py-2   rounded-md focus:outline-none focus:border-indigo-500 transition-colors cursor-pointer">
-                                                                <option value="">Select Gender</option>
-                                                                <option value="02">Male</option>
-                                                                <option value="03">Female</option>
-                                                                <option value="04">Prefer not to state</option>                                                  
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="w-full mx-2 flex-1 mt-2 svelte-1l8159u">
-                                                <label class="text-gray-600 font-normal text-sm mb-9 ml-1">Mobile number</label>
-                                                <div class="bg-white  border border-gray-200  rounded svelte-1l8159u">                                                                                         
-                                                    <div class="flex items-end -mb-1">
-                                                        <div class="w-1/3">                                                                                                         
-                                                            <div>
-                                                                <select class="form-select w-full px-3 py-3 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors cursor-pointer">
-                                                                    <option value="">Date </option>
-                                                                    <option value="01">01 </option>
-                                                                    <option value="02">02 </option>
-                                                                    <option value="03">03 </option>
-                                                                    <option value="04">04 </option>
-                                                                    <option value="05">05 </option>
-                                                                    <option value="06">06 </option>
-                                                                    <option value="07">07 </option>
-                                                                    <option value="08">08 </option>
-                                                                    <option value="09">09 </option>
-                                                                    <option value="10">10 </option>
-                                                                    <option value="11">11 </option>
-                                                                    <option value="12">12 </option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="px-2 w-1/3">                                                        
-                                                            <div>
-                                                                <select class="form-select w-full px-3 py-3 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors cursor-pointer">
-                                                                    <option value="">Month</option>
-                                                                    <option value="01">January</option>
-                                                                    <option value="02">February</option>
-                                                                    <option value="03">March</option>
-                                                                    <option value="04">April</option>
-                                                                    <option value="05">May</option>
-                                                                    <option value="06">June</option>
-                                                                    <option value="07">July</option>
-                                                                    <option value="08">August</option>
-                                                                    <option value="09">September</option>
-                                                                    <option value="10">October</option>
-                                                                    <option value="11">November</option>
-                                                                    <option value="12">December</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class=" w-1/3">
-                                                            <select class="form-select w-full px-3 py-3 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors cursor-pointer">
-                                                                <option value="">Year</option>
-                                                                <option value="2021">2021</option>
-                                                                <option value="2022">2022</option>
-                                                                <option value="2023">2023</option>
-                                                                <option value="2024">2024</option>
-                                                                <option value="2025">2025</option>
-                                                                <option value="2026">2026</option>
-                                                                <option value="2027">2027</option>
-                                                                <option value="2028">2028</option>
-                                                                <option value="2029">2029</option>
-                                                            </select>
-                                                        </div>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Manchester United Football Club Limited Icon undefined.png" alt="club" />
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="flex flex-col md:flex-row pt-7">
-                                            <div class="w-full mx-2 flex-1 svelte-1l8159u">
-                                                
-                                                <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
-                                                    <select class="form-select w-full px-3 py-2   rounded-md focus:outline-none focus:border-indigo-500 transition-colors cursor-pointer">
-                                                                <option value="">Select Country</option>
-                                                                <option value="02">Niger</option>
-                                                                <option value="03">Boni</option>
-                                                                <option value="04">PAmerica</option>                                                  
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="w-full mx-2 flex-1 svelte-1l8159u">
-                                                {/* <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">                                                 */}
-                                                    <div class="mb-3 -mx-2 flex items-end ">
-                                                        <div class="px-2 w-1/4">                                                        
-                                                            <div>
-                                                            <label class="text-gray-600 font-normal text-sm mb-2 ml-1">Mobile number</label>
-                                                                <select class="form-select w-full px-3 py-3 mb-1 border border-gray-200 rounded focus:outline-none focus:border-indigo-500 transition-colors cursor-pointer">
-                                                                    <option value="01">Code</option>
-                                                                    <option value="02">+222</option>
-                                                                    <option value="03">+223</option>
-                                                                    <option value="04">+234</option>                                                                
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="px-2 w-3/4">                                                        
-                                                            <div>
-                                                                <input class="w-full px-2 py-2 mb-1 border border-gray-200 rounded focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Enter number" type="text"/>
-                                                            </div>
-                                                        </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Manchester United</p>
+                                                         </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Barcelona Icon undefined.png" alt="club" />
                                                     </div>
-                                                {/* </div> */}
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Barcelona</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Juventus Football Club Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Juventus</p>
+                                                             </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Chelsea Football Club Icon undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Chelsea</p>
+                                                         </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Real Madrid C.F. Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Real Madrid</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Aston Villa Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Aston Villa</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Manchester City Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Manchester City</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Liverpool FC Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Liverpool FC</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Fcporto Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Fc porto</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Sevilla FC Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Sevilla</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Atlético de Madrid Icon undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Atlético de Madrid</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Roma F. C. Soccer Academy Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Roma FC</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Ville de Lyon Icon undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Lyon</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Paris Saint-Germain F.C. Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Paris Saint-Germain</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Realbetisbalompie Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Real Betis</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Palmeiras Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Palmeiras</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Cariverplate Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Cariverplate</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Argentina F.C. Icon undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Argentina F.C</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/AFC Ajax Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">AFC Ajax</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Sporting CP Academy Toronto Icon undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Sporting</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Sou_Flamengo Icon undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2"> Flamengo</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Tottenham Hotspur Icon undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Tottenham</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/West Ham United Football Club Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">West Ham United </p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Borussia Dortmund Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Borussia Dortmund</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Napoli Icon undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">SSC Napoli</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Crystal Palace F.C. Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Crystal Palace</p>
+                                                    </div>
+                                                </button>
+                                                <button class="w-full border  sahdow-lg p-8 flex flex-col justify-center items-center">
+                                                    <div class="mb-8">
+                                                        <img class="object-center object-cover rounded-full h-26 w-26" src="/img/Celtics Blog Logo undefined.png" alt="club" />
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <p class="text-sm text-gray-700 font-normal mb-2">Celtics</p>
+                                                    </div>
+                                                </button>
                                             </div>
-                                        </div>
+                                        </section>
                                     </div>
 
-                                    <div class="flex p-2 mt-4 justify-center">
+                                    <div class=" p-2 mt-10 justify-center border-b border-gray-200 pb-10">
+                                        <button class="text-base hover:scale-110 focus:outline-none flex justify-center px-20 py-2  font-bold cursor-pointer                                 
+                                            hover:bg-blue-500 shadow-inner 
+                                            bg-gray-200 text-gray-500
+                                            duration-200 ease-in-out 
+                                            transition mx-auto"><div class="font-sans text-sm font-bold px-10">Load more clubs</div></button> 
 
-                                        <button class="text-base hover:scale-110 focus:outline-none flex justify-center px-10 py-2 rounded font-bold cursor-pointer 
-                                    
-                                    hover:bg-blue-500 shadow-inner rounded-lg
-                                    bg-violet-500 text-gray-200
-                                    duration-200 ease-in-out 
-                                    transition"><div class="font-sans text-sm font-semibold px-10">Next</div></button>
-                                        
+                                    </div>
+
+                                    <div class=" p-2 mt-10 justify-center">
+                                        <button class="text-base hover:scale-110 focus:outline-none flex justify-center px-10 py-2 rounded font-bold cursor-pointer                                 
+                                            hover:bg-blue-500 shadow-inner rounded-lg
+                                            bg-violet-500 text-gray-200
+                                            duration-200 ease-in-out 
+                                            transition mx-auto"><div class="font-sans text-sm font-bold px-10">Next</div></button> 
+                                        <button type="button"
+                                        class="flex items-center text-gray-500 rounded py-2 focus:outline-none mx-auto">
+                                        <span class=" -mr-20 material-icons hover:text-green-500">
+                                            arrow_backward
+                                        </span>Back to favourites</button>
+
                                     </div>
                                 </div>
                             </div>
