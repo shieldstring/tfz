@@ -7,7 +7,7 @@ import Agreement from "./screen/Agreement";
 import Favourite from "./screen/Favourite";
 import NameTeam from "./pages/NameTeam";
 import YourAccount from "./pages/YourAccount";
-import CreateLeauge from "./pages/CreateLeauge";
+import CreateLeague from "./pages/CreateLeague";
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
             <Route path="agreement" element={ <Agreement /> } />
             <Route path="nameteam" element={ <NameTeam /> } />
             <Route path="account" element={ <YourAccount/> } />
-            <Route path="leauge" element={ <CreateLeauge/> } />
+            <Route path="league" element={ <CreateLeague/> } />
 
 
 

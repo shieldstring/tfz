@@ -73,7 +73,19 @@ function YourAccount() {
                             
             </div>
 
-            
+            <div className='container'>
+                <hr class="mt-20 max-w-6xl rounded-lg border-b-2 border-violet-500 mx-auto " />
+                
+                <div class="w-full flex mb-5" >                
+                    <div class="rounded-2xl bg-gray-200 border mt-5  py-5 px-3 w-1/6 h-24" > </div>
+                    <div class="rounded-2xl bg-gray-200 border  mt-5 ml-10 py-5 px-3 w-1/6 h-24" > </div>
+                    <div class="rounded-2xl bg-gray-200 border  mt-5 ml-10 py-5 px-3 w-1/6 h-24" > </div>
+                    <div class="rounded-2xl bg-gray-200 border  mt-5 ml-10 py-5 px-3 w-1/6 h-24" > </div>
+                    <div class="rounded-2xl bg-gray-200 border  mt-5 ml-10 py-5 px-3 w-1/6 h-24" > </div>
+                    <div class="rounded-2xl bg-gray-200 border  mt-5 ml-10 py-5 px-3 w-1/6 h-24" > </div>
+                    
+                </div>
+            </div>
         
         <MainFooter />
     </div>
