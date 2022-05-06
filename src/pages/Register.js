@@ -209,7 +209,7 @@ function Register() {
 
                                     <button class="text-base hover:scale-110 focus:outline-none flex justify-center px-10 py-2 rounded font-bold cursor-pointer 
                                 
-                                hover:bg-blue-500 shadow-inner rounded-lg
+                                hover:bg-blue-500 shadow-inner 
                                 bg-violet-500 text-gray-200
                                  duration-200 ease-in-out 
                                  transition"><div class="font-sans text-sm font-semibold px-10">Next</div></button>
