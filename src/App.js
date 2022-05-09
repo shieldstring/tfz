@@ -8,6 +8,7 @@ import Favourite from "./screen/Favourite";
 import NameTeam from "./pages/NameTeam";
 import YourAccount from "./pages/YourAccount";
 import CreateLeague from "./pages/CreateLeague";
+import JoinLeague from "./screen/JoinLeague";
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
             <Route path="nameteam" element={ <NameTeam /> } />
             <Route path="account" element={ <YourAccount/> } />
             <Route path="league" element={ <CreateLeague/> } />
+            <Route path="joinleague" element={ <JoinLeague/> } />
+
 
 
 

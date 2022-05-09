@@ -73,7 +73,7 @@ function YourAccount() {
                             
             </div>
 
-            <div className='container'>
+            <div className='container ml-24 max-w-6xl'>
                 <hr class="mt-20 max-w-6xl rounded-lg border-b-2 border-violet-500 mx-auto " />
                 
                 <div class="w-full flex mb-5" >                
