@@ -11,6 +11,8 @@ import CreateLeague from "./pages/CreateLeague";
 import JoinLeague from "./screen/JoinLeague";
 import JoinPrivateLeague from "./screen/JoinPrivateLeague";
 import Wallet from "./pages/Wallet";
+import Withdrawls from "./pages/Withdrawls";
+import Login from "./pages/Login";
 
 
 function App() {
@@ -31,10 +33,8 @@ function App() {
             <Route path="joinleague" element={ <JoinLeague/> } />
             <Route path="joinprivateleague" element={ <JoinPrivateLeague /> } />
             <Route path="wallet" element={ <Wallet /> } />
-
-
-
-
+            <Route path="withdrawls" element={ <Withdrawls /> } />
+            <Route path="login" element={ <Login /> } />
 
 
 

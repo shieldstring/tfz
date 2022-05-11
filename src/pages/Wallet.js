@@ -54,7 +54,7 @@ function Wallet() {
 							<div class="flex flex-col md:flex-row py-10">
 								<div class="w-full mx-2 flex-1 svelte-1l8159u">
 									<button
-										class="text-base shadow-lg shadow-indigo-500/50 hover:scale-110 focus:outline-none flex justify-center px-20 py-2 rounded font-bold cursor-pointer 
+										class="text-base shadow-xl shadow-indigo-500/50 hover:scale-110 focus:outline-none flex justify-center px-20 py-2 rounded font-bold cursor-pointer 
                                 
                                 hover:bg-blue-500 
                                 bg-violet-500 text-gray-200
@@ -69,7 +69,7 @@ function Wallet() {
 
 								<div class="w-full mx-2 flex-1 svelte-1l8159u">
 									<button
-										class="text-base shadow-lg shadow-indigo-500/50 hover:scale-110 focus:outline-none flex justify-center px-20 py-2 rounded font-bold cursor-pointer 
+										class="text-base shadow-xl shadow-indigo-500/50 hover:scale-110 focus:outline-none flex justify-center px-20 py-2 rounded font-bold cursor-pointer 
                                 
                                 hover:bg-blue-500 
                                 bg-violet-500 text-gray-200
@@ -373,6 +373,16 @@ function Wallet() {
 											</div>
 										</div>
 									</div>
+
+									<button
+										type="button"
+										class="flex items-center text-indigo-700 text-md font-medium rounded  py-5 focus:outline-none"
+									>
+										Load more
+										<span class="ml-2 material-icons hover:text-blue-500">
+											arrow_forward
+										</span>
+									</button>
 								</div>
 							</div>
 						</div>
