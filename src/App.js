@@ -13,6 +13,9 @@ import JoinPrivateLeague from "./league/JoinPrivateLeague";
 import Wallet from "./wallet/Wallet";
 import Withdrawls from "./wallet/Withdrawls";
 import Login from "./account/Login";
+import Fixtures from "./pages/Fixtures";
+
+
 
 
 function App() {
@@ -35,6 +38,8 @@ function App() {
             <Route path="wallet" element={ <Wallet /> } />
             <Route path="withdrawls" element={ <Withdrawls /> } />
             <Route path="login" element={ <Login /> } />
+            <Route path="fixtures" element={ <Fixtures /> } />
+
 
 
 

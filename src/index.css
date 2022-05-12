@@ -21,3 +21,11 @@
       transform: translateY(-10px);
   }
 }
+
+
+input:checked ~ .radio {
+  color:#000;
+  background-color: #fff;
+  border-color: rgb(175, 42, 42);
+  border-style: solid;
+}
