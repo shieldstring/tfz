@@ -1,18 +1,18 @@
 import { BrowserRouter as Router,Route , Routes} from "react-router-dom";
-import EmailConfirm from "./screen/EmailConfirm";
+import EmailConfirm from "./account/EmailConfirm";
 import Home from "./pages/Home";
-import Register from "./pages/Register";
-import Thanks from "./screen/Thanks";
-import Agreement from "./screen/Agreement";
-import Favourite from "./screen/Favourite";
+import Register from "./account/Register";
+import Thanks from "./account/Thanks";
+import Agreement from "./account/Agreement";
+import Favourite from "./account/Favourite";
 import NameTeam from "./pages/NameTeam";
-import YourAccount from "./pages/YourAccount";
-import CreateLeague from "./pages/CreateLeague";
-import JoinLeague from "./screen/JoinLeague";
-import JoinPrivateLeague from "./screen/JoinPrivateLeague";
-import Wallet from "./pages/Wallet";
-import Withdrawls from "./pages/Withdrawls";
-import Login from "./pages/Login";
+import YourAccount from "./account/YourAccount";
+import CreateLeague from "./league/CreateLeague";
+import JoinLeague from "./league/JoinLeague";
+import JoinPrivateLeague from "./league/JoinPrivateLeague";
+import Wallet from "./wallet/Wallet";
+import Withdrawls from "./wallet/Withdrawls";
+import Login from "./account/Login";
 
 
 function App() {
