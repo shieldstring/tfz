@@ -15,6 +15,7 @@ import Withdrawls from "./wallet/Withdrawls";
 import Login from "./account/Login";
 import Fixtures from "./pages/Fixtures";
 import LeagueFixtures from "./league/LeagueFixtures";
+import EntryHistory from "./pick team/EntryHistory";
 
 
 
@@ -41,10 +42,7 @@ function App() {
             <Route path="login" element={ <Login /> } />
             <Route path="fixtures" element={ <Fixtures /> } />
             <Route path="leaguefixtures" element={ <LeagueFixtures /> } />
-
-
-
-
+            <Route path="entryhistory" element={ <EntryHistory /> } />
 
           </Routes>
         </Router>
