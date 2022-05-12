@@ -21,7 +21,7 @@ function Fixtures() {
 						/>
 						<label
 							for="fixtures"
-							class="radio text-center text-gray-100 self-center py-3 px-10 border cursor-pointer bg-red-800 hover:opacity-75"
+							class="radio text-center text-gray-100 self-center py-3 px-16 border cursor-pointer bg-red-800 hover:opacity-75"
 						>
 							Fixtures
 						</label>
@@ -30,7 +30,7 @@ function Fixtures() {
 						<input type="radio" name="room_type" id="fdr" hidden />
 						<label
 							for="fdr"
-							class="radio text-center text-gray-100 self-center py-3 px-14 border rounded-sm cursor-pointer bg-red-800  hover:opacity-75"
+							class="radio text-center text-gray-100 self-center py-3 px-20 border rounded-sm cursor-pointer bg-red-800  hover:opacity-75"
 						>
 							FDR
 						</label>
@@ -64,7 +64,7 @@ function Fixtures() {
 									class="text-base shadow-xl shadow-indigo-500/50 hover:scale-110 focus:outline-none flex justify-center px-5 py-2 rounded font-bold cursor-pointer 
                                 
                                 hover:bg-blue-500 
-                                bg-violet-500 text-gray-200
+                                bg-violet-400 text-gray-200
                                  duration-200 ease-in-out 
                                  transition"
 								>
@@ -84,7 +84,7 @@ function Fixtures() {
 									class="text-base shadow-xl shadow-indigo-500/50 hover:scale-110 focus:outline-none flex justify-center px-5 py-2 rounded font-bold cursor-pointer 
                                 
                                 hover:bg-blue-500 
-                                bg-violet-500 text-gray-200
+                                bg-violet-400 text-gray-200
                                  duration-200 ease-in-out 
                                  transition"
 								>

@@ -14,6 +14,7 @@ import Wallet from "./wallet/Wallet";
 import Withdrawls from "./wallet/Withdrawls";
 import Login from "./account/Login";
 import Fixtures from "./pages/Fixtures";
+import LeagueFixtures from "./league/LeagueFixtures";
 
 
 
@@ -39,6 +40,8 @@ function App() {
             <Route path="withdrawls" element={ <Withdrawls /> } />
             <Route path="login" element={ <Login /> } />
             <Route path="fixtures" element={ <Fixtures /> } />
+            <Route path="leaguefixtures" element={ <LeagueFixtures /> } />
+
 
 
 
