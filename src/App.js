@@ -43,7 +43,7 @@ function App() {
             <Route path="fixtures" element={ <Fixtures /> } />
             <Route path="leaguefixtures" element={ <LeagueFixtures /> } />
             <Route path="entryhistory" element={ <EntryHistory /> } />
-
+            
           </Routes>
         </Router>
           

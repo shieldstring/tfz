@@ -113,7 +113,7 @@ function EntryHistory() {
 						</div>
 					</div>
 
-					<div class="container max-w-xs bg-violet-700  border-inherit rounded-xl shadow-lg shadow-indigo-500/50 md:w-3/5 ml-24 mt-10 mb-20  px-4 py-6 lg:px-5  w-auto">
+					<div class="container max-w-sm bg-violet-700  border-inherit rounded-xl shadow-lg shadow-indigo-500/50 md:w-3/5 ml-12 mt-10 mb-20  px-4 py-6 lg:px-5  w-auto">
 						<div class="w-full  ">
 							<h1 class="font-normal text-lg  text-gray-100  py-2 ">
 								Kolawole Olagoke!
@@ -241,7 +241,7 @@ function EntryHistory() {
 
 									<button
 										type="button"
-										class="flex ml-32 text-right text-indigo-700 text-sm   font-medium rounded  py-3 focus:outline-none"
+										class="flex ml-48 text-right text-indigo-700 text-sm   font-medium rounded  py-3 focus:outline-none"
 									>
 										Load more
 										<span class="ml-2 text-sm material-icons hover:text-blue-500">
@@ -346,19 +346,19 @@ function EntryHistory() {
 
 									<div class="flex items-center border-b border-gray-300 py-1">
 										<div class="flex items-start justify-between w-full ">
-											<div class=" w-full">
-												<span class=" align-middle  material-icons text-5xl text-green-500 ">
-													arrow_drop_up
-												</span>
+											<div class=" w-full">												
 												<p
 													tabindex="0"
-													class="focus:outline-none text-xs text-left leading-normal pt-1 text-gray-500"
+													class="focus:outline-none text-xs text-left leading-normal text-gray-500"
 												>
+													<span class=" align-middle  material-icons text-5xl text-green-500 ">
+													arrow_drop_up
+												</span>
 													1,067,900
 												</p>
 											</div>
 
-											<div class=" pl-20 w-full  text-right">
+											<div class=" pl-20 w-full pt-3 text-right">
 												<p
 													tabindex="0"
 													class="focus:outline-none  text-sm font-medium leading-5 text-indigo-800"
@@ -385,18 +385,19 @@ function EntryHistory() {
 									<div class="flex items-center border-b border-gray-300 py-1">
 										<div class="flex items-start justify-between w-full ">
 											<div class=" w-full">
-												<span class=" align-middle  material-icons text-5xl text-gray-700 ">
-													arrow_drop_down
-												</span>
+												
 												<p
 													tabindex="0"
-													class="focus:outline-none text-xs text-left leading-normal pt-1 text-gray-500"
+													class="focus:outline-none text-xs text-left leading-normal  text-gray-500"
 												>
+													<span class=" align-middle  material-icons text-5xl text-gray-700 ">
+													arrow_drop_down
+												</span>
 													1
 												</p>
 											</div>
 
-											<div class=" pl-20 w-full  text-right">
+											<div class=" pl-16 w-full pt-3 text-right">
 												<p
 													tabindex="0"
 													class="focus:outline-none  text-sm font-medium leading-5 text-indigo-800"
@@ -420,21 +421,22 @@ function EntryHistory() {
 										</div>
 									</div>
 
-									<div class="flex items-center border-b border-gray-300 py-1">
+									<div class="flex items-center border-b border-gray-300 ">
 										<div class="flex items-start justify-between w-full ">
 											<div class=" w-full">
-												<span class=" align-middle  material-icons text-5xl text-red-500 ">
-													arrow_drop_down
-												</span>
+												
 												<p
 													tabindex="0"
-													class="focus:outline-none text-xs text-left leading-normal pt-1 text-gray-500"
+													class="focus:outline-none text-xs text-left leading-normal  text-gray-500"
 												>
+													<span class=" align-middle  material-icons text-5xl text-red-500 ">
+													arrow_drop_down
+												</span>
 													100, 500
 												</p>
 											</div>
 
-											<div class=" pl-20 w-full  text-right">
+											<div class=" pl-20 w-full pt-3 text-right">
 												<p
 													tabindex="0"
 													class="focus:outline-none  text-sm font-medium leading-5 text-indigo-800"
@@ -444,21 +446,23 @@ function EntryHistory() {
 											</div>
 										</div>
 									</div>
-									<div class="flex items-center border-b border-gray-300 py-1">
+
+									<div class="flex items-center border-b border-gray-300 ">
 										<div class="flex items-start justify-between w-full ">
 											<div class=" w-full">
-												<span class=" align-middle  material-icons text-5xl text-green-500 ">
-													arrow_drop_up
-												</span>
+												
 												<p
 													tabindex="0"
-													class="focus:outline-none text-xs text-left leading-normal pt-1 text-gray-500"
+													class="focus:outline-none text-xs text-left leading-normal text-gray-500"
 												>
+													<span class=" align-middle  material-icons text-5xl text-green-500 ">
+												arrow_drop_up
+											</span>
 													432,456
 												</p>
 											</div>
 
-											<div class=" pl-20 w-full  text-right">
+											<div class=" pl-20 w-full pt-3 text-right">
 												<p
 													tabindex="0"
 													class="focus:outline-none  text-sm font-medium leading-5 text-indigo-800"
@@ -469,21 +473,22 @@ function EntryHistory() {
 										</div>
 									</div>
 
-									<div class="flex items-center border-b border-gray-300 py-1">
+									<div class="flex items-center border-b border-gray-300 ">
 										<div class="flex items-start justify-between w-full ">
 											<div class=" w-full">
-												<span class=" align-middle  material-icons text-5xl text-green-500 ">
-													arrow_drop_up
-												</span>
+												
 												<p
 													tabindex="0"
-													class="focus:outline-none text-xs text-left leading-normal pt-1 text-gray-500"
+													class="focus:outline-none text-xs text-left leading-normal text-gray-500"
 												>
+													<span class=" align-middle  material-icons text-5xl text-green-500 ">
+													arrow_drop_up
+												</span>
 													803,450
 												</p>
 											</div>
 
-											<div class=" pl-20 w-full  text-right">
+											<div class=" pl-20 w-full pt-3  text-right">
 												<p
 													tabindex="0"
 													class="focus:outline-none  text-sm font-medium leading-5 text-indigo-800"
@@ -494,21 +499,21 @@ function EntryHistory() {
 										</div>
 									</div>
 
-									<div class="flex items-center border-b border-gray-300 py-1">
+									<div class="flex items-center border-b border-gray-300 ">
 										<div class="flex items-start justify-between w-full ">
 											<div class=" w-full">
-												<span class=" align-middle  material-icons text-5xl text-green-500 ">
-													arrow_drop_up
-												</span>
+												
 												<p
 													tabindex="0"
-													class="focus:outline-none text-xs text-left leading-normal pt-1 text-gray-500"
-												>
+													class="focus:outline-none text-xs text-left leading-normal text-gray-500"
+												><span class=" align-middle  material-icons text-5xl text-green-500 ">
+												arrow_drop_up
+											</span>
 													5,432,456
 												</p>
 											</div>
 
-											<div class=" pl-20 w-full  text-right">
+											<div class=" pl-20 w-full pt-3 text-right">
 												<p
 													tabindex="0"
 													class="focus:outline-none  text-sm font-medium leading-5 text-indigo-800"
@@ -521,7 +526,7 @@ function EntryHistory() {
 
 									<button
 										type="button"
-										class="flex ml-32 text-right text-indigo-700 text-sm   font-medium rounded  py-3 focus:outline-none"
+										class="flex ml-28 text-right text-indigo-700 text-sm   font-medium rounded  py-3 focus:outline-none"
 									>
 										Create and join Leagues
 										<span class="ml-2 text-sm material-icons hover:text-blue-500">
@@ -546,12 +551,12 @@ function EntryHistory() {
 										</div>
 									</div>
 
-									<div class="flex items-center border-b border-gray-300 py-1">
-										<div class="w-full  p-4 flex flex-col justify-center items-center">
+									<div class="flex  border-b border-gray-300 py-1">
+										<div class="w-full  p-2 flex flex-col  ">
 											<div class="text-left">
 												<p
 													tabindex="0"
-													class="focus:outline-none  text-xs font-normal leading-5 text-gray-800"
+													class="focus:outline-none text-xs font-normal leading-5 text-gray-800"
 												>
 													KingsMen City didn't qualify
 												</p>
@@ -561,7 +566,7 @@ function EntryHistory() {
 
 									<button
 										type="button"
-										class="flex ml-32 text-right text-indigo-700 text-sm   font-medium rounded  py-3 focus:outline-none"
+										class="flex ml-40 text-right text-indigo-700 text-sm   font-medium rounded  py-3 focus:outline-none"
 									>
 										View cup details
 										<span class="ml-2 text-sm material-icons hover:text-blue-500">
@@ -632,7 +637,7 @@ function EntryHistory() {
 										<div class="flex items-start justify-between w-full ">
 											<button
 												type="button"
-												class="flex ml-32 text-right text-indigo-700 text-sm   font-medium rounded  py-3 focus:outline-none"
+												class="flex ml-40 text-right text-indigo-700 text-sm   font-medium rounded  py-3 focus:outline-none"
 											>
 												View cup details
 												<span class="ml-2 text-sm material-icons hover:text-blue-500">
@@ -690,7 +695,7 @@ function EntryHistory() {
 
                             <div class="mt-10  px-1  ">
 								<div class="bg-gray-100 rounded-sm border shadow-xl p-5 w-full pb-10 ">
-									<div class="flex items-center border-b border-gray-300 py-3">
+									<div class="flex items-center border-b border-gray-300 py-3				">
 										<div class="flex items-center justify-between w-full ">
 											<div class=" w-full">
 												<p
