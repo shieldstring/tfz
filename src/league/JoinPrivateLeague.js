@@ -67,9 +67,9 @@ export default function JoinPrivateLeague() {
 						</h1>
 
 						<div class="-ml-6 relative overflow-x-auto  sm:rounded-lg">
-							<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+							<table class="w-full text-sm text-left text-gray-500 ">
 								<tbody>
-									<tr class="dark:bg-gray-800 dark:border-gray-700">
+									<tr >
 										<th
 											scope="row"
 											class="px-6 py-4 font-normal text-gray-500 "
@@ -88,7 +88,7 @@ export default function JoinPrivateLeague() {
 											</a>
 										</td>
 									</tr>
-									<tr class="dark:bg-gray-800 dark:border-gray-700">
+									<tr >
 										<th
 											scope="row"
 											class="px-6 py-4 font-normal text-gray-500 "
@@ -107,7 +107,7 @@ export default function JoinPrivateLeague() {
 											</a>
 										</td>
 									</tr>
-									<tr class="dark:bg-gray-800 dark:border-gray-700">
+									<tr >
 										<th
 											scope="row"
 											class="px-6 py-4 font-normal text-gray-500 "
@@ -126,7 +126,7 @@ export default function JoinPrivateLeague() {
 											</a>
 										</td>
 									</tr>
-									<tr class="dark:bg-gray-800 dark:border-gray-700">
+									<tr >
 										<th
 											scope="row"
 											class="px-6 py-4 font-normal text-gray-500 "
@@ -145,7 +145,7 @@ export default function JoinPrivateLeague() {
 											</a>
 										</td>
 									</tr>
-									<tr class="dark:bg-gray-800 dark:border-gray-700">
+									<tr >
 										<th
 											scope="row"
 											class="px-6 py-4 font-normal text-gray-500 "
@@ -164,7 +164,7 @@ export default function JoinPrivateLeague() {
 											</a>
 										</td>
 									</tr>
-									<tr class="dark:bg-gray-800 dark:border-gray-700">
+									<tr >
 										<th
 											scope="row"
 											class="px-6 py-4 font-normal text-gray-500 "
@@ -183,7 +183,7 @@ export default function JoinPrivateLeague() {
 											</a>
 										</td>
 									</tr>
-									<tr class="dark:bg-gray-800 dark:border-gray-700">
+									<tr >
 										<th
 											scope="row"
 											class="px-6 py-4 font-normal text-gray-500 "
