@@ -280,7 +280,7 @@ function EntryHistory() {
 
 									<button
 										type="button"
-										class="flex ml-32 text-right text-indigo-700 text-sm   font-medium rounded  py-3 focus:outline-none"
+										class="flex ml-44 text-right text-indigo-700 text-sm   font-medium rounded  py-3 focus:outline-none"
 									>
 										Design your kit
 										<span class="ml-2 text-sm material-icons hover:text-blue-500">
@@ -319,7 +319,7 @@ function EntryHistory() {
 
 									<button
 										type="button"
-										class="flex ml-32 text-right text-indigo-700 text-sm   font-medium rounded  py-3 focus:outline-none"
+										class="flex ml-44 text-right text-indigo-700 text-sm   font-medium rounded  py-3 focus:outline-none"
 									>
 										Design your kit
 										<span class="ml-2 text-sm material-icons hover:text-blue-500">

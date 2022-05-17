@@ -16,6 +16,8 @@ import Login from "./account/Login";
 import Fixtures from "./pages/Fixtures";
 import LeagueFixtures from "./league/LeagueFixtures";
 import EntryHistory from "./pick team/EntryHistory";
+import Fund from "./wallet/Fund";
+import JoinPublicLeague from "./league/JoinPublicLeague";
 
 
 
@@ -37,8 +39,12 @@ function App() {
             <Route path="league" element={ <CreateLeague/> } />
             <Route path="joinleague" element={ <JoinLeague/> } />
             <Route path="joinprivateleague" element={ <JoinPrivateLeague /> } />
+            <Route path="joinpublicleague" element={ <JoinPublicLeague /> } />
+
             <Route path="wallet" element={ <Wallet /> } />
             <Route path="withdrawls" element={ <Withdrawls /> } />
+            <Route path="fund" element={ <Fund /> } />
+
             <Route path="login" element={ <Login /> } />
             <Route path="fixtures" element={ <Fixtures /> } />
             <Route path="leaguefixtures" element={ <LeagueFixtures /> } />
