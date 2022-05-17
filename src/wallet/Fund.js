@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import MainBreadCrumb from "../components/MainBreadCrumb";
 import MainFooter from "../components/MainFooter";
@@ -8,6 +9,21 @@ function Fund() {
 		<div className="bg-[#E5ECFA]/100 h-3/4">
 			<Header />
 			<MainBreadCrumb />
+
+			<div class="inline-flex rounded -ml-1">
+				<Link to="/wallet">
+					<h1 class="font-medium text-lg text-violet-900 w-4/6 ml-24 mt-10 px-2 ">
+						Wallet
+					</h1>
+				</Link>
+				<span class="material-icons -ml-2 mt-9 text-3xl text-violet-600">
+					navigate_next
+				</span>
+
+				<h1 class="font-medium  -ml-2 text-lg text-gray-900  mt-10 px-2 ">
+					Fund wallet
+				</h1>
+			</div>
 
 			<div className="container">
 				<div className="flex">
@@ -42,6 +58,7 @@ function Fund() {
 											₦5,000
 										</p>
 									</div>
+
 									<div class="pt-8 pr-6">
 										<div class="flex justify-between">
 											<div class="">
