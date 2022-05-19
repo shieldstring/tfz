@@ -19,6 +19,8 @@ import EntryHistory from "./pick team/EntryHistory";
 import Fund from "./wallet/Fund";
 import JoinPublicLeague from "./league/JoinPublicLeague";
 import SquadSelection from "./squad/SquadSelection";
+import ListView from "./squad/ListView";
+import TabsRender from "./squad/ListView";
 
 
 
@@ -39,6 +41,8 @@ function App() {
             <Route path="account" element={ <YourAccount/> } />
 
             <Route path="squad" element={ <SquadSelection /> } />
+            <Route path="listview" element={ <TabsRender /> } />
+
 
             <Route path="league" element={ <CreateLeague/> } />
             <Route path="joinleague" element={ <JoinLeague/> } />
