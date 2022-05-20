@@ -75,7 +75,7 @@ function SquadSelection() {
 				</p>
 				<div className="flex">
 					<div
-						className="container  max-w-4xl h-3/4  ml-24 mt-10 mb-20  px-2 py-6 lg:px-1  "
+						className="container  max-w-4xl h-3/4  ml-24 mt-10   px-2 py-3 lg:px-1  "
 						style={{
 							backgroundImage: 'url("/img/pitch-md.png")',
 							backgroundRepeat: "no-repeat",
@@ -83,13 +83,13 @@ function SquadSelection() {
 							backgroundPosition: "center center"
 						}}
 					>
-						<div className="flex justify-center items-center mb-3  mx-auto mt-12">
+						<div className="flex justify-center items-center  mb-8 mx-auto mt-12">
 							<div className="inline-flex rounded">
 								<input
 									type="radio"
 									name="room_type"
 									id="fixtures"
-									// checked
+									
 									hidden
 									onClick={(e) => {
 										e.preventDefault();
@@ -102,8 +102,8 @@ function SquadSelection() {
 									for="fixtures"
 									className={"radio text-center  self-center py-3 px-12 border cursor-pointer  hover:opacity-75 " + 
 									(openTab === 1
-										? "text-red-800 bg-white"
-										: "text-white bg-red-800")}
+										? "text-red-800 bg-white border-red-800"
+										: "text-white bg-red-800 border-red-800")}
 								>
 									Pitch View
 								</label>
@@ -125,8 +125,8 @@ function SquadSelection() {
 									for="fdr"
 									className={"radio text-center  self-center py-3 px-12 border rounded-sm cursor-pointer   hover:opacity-75 " +
 									 (openTab === 2
-										? "text-red-800 bg-white"
-										: "text-white bg-red-800")}
+										? "text-red-800 bg-white border-red-800"
+										: "text-white bg-red-800 border-red-800")}
 								>
 									List View
 								</label>
@@ -143,7 +143,7 @@ function SquadSelection() {
 												id="link1"
 											>
 												<div className="flex   py-10 mx-auto">
-													<div class="p-3 bg-gray-800/90 rounded mt-24 mx-auto space-x-6  shadow-md hover:scale-105 transition transform duration-500 cursor-pointer">
+													<div class="p-3 bg-gray-800/90 rounded mt-28 mx-auto space-x-6  shadow-md hover:scale-105 transition transform duration-500 cursor-pointer">
 														<div className="-mt-[4rem] ">
 															<svg
 																width="52"

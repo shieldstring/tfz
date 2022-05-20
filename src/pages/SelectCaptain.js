@@ -4,8 +4,10 @@ import Header from "../components/Header";
 import MainFooter from "../components/MainFooter";
 
 function SelectCaptain() {
+	const [openTab, setOpenTab] = React.useState(1);
+
 	return (
-		<div className="bg-[#E5ECFA]/100 h-3/4">
+		<div className="bg-[#E5ECFA]/100 ">
 			<Header />
 			<BreadCrumb />
 
@@ -44,421 +46,503 @@ function SelectCaptain() {
 							backgroundPosition: "center center",
 						}}
 					>
-						<p className="text-sm text-gray-100 font-normal text-center  max-w-3xl mb-8 py-5 bg-[#6E4BEC7D]/70 tracking-wider px-2 mx-auto lg:px-1 ">
+						<p className="text-sm text-gray-100 font-normal text-center  max-w-3xl mb-5 py-5 bg-[#6E4BEC7D]/70 tracking-wider px-2 mx-auto lg:px-1 ">
 							Your Captain's point will be doubled
 						</p>
-						<div className="flex   py-4 mx-auto">
-							<div class="p-3  rounded mt-20 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
-								<div className="-mt-[3rem] ">
-									<svg
-										width="43"
-										height="41"
-										viewBox="0 0 53 51"
-										fill="none"
-										className=" mx-auto z-0"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
-											fill="#03A9F4"
-										/>
-										<path
-											d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
-											stroke="white"
-											stroke-width="0.5"
-										/>
-									</svg>
+
+						<div className={"mt-20" + (openTab === 1 ? "block" : "hidden")}>
+							<div className="flex mt-[7rem]  py-10 mx-auto">
+								<div class="p-3  rounded mt-2 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
+									<div className="-mt-[3rem] ">
+										<svg
+											width="43"
+											height="41"
+											viewBox="0 0 53 51"
+											fill="none"
+											className=" mx-auto z-0"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
+												fill="#03A9F4"
+											/>
+											<path
+												d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
+												stroke="white"
+												stroke-width="0.5"
+											/>
+										</svg>
+									</div>
+									<div className="w-full mx-auto -mt-1    mb-1">
+										<p
+											tabindex="0"
+											className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
+										>
+											C. Ronaldo
+										</p>
+										<p
+											tabindex="0"
+											className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
+										>
+											11.9
+										</p>
+									</div>
 								</div>
-								<div className="w-full mx-auto -mt-1    mb-1">
-									<p
-										tabindex="0"
-										className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
-									>
-										C. Ronaldo
-									</p>
-									<p
-										tabindex="0"
-										className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
-									>
-										11.9
-									</p>
+							</div>
+
+							<div className="flex   py-10 mx-auto w-1/2">
+								<div class="p-3  rounded mt-2  mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
+									<div className="-mt-[3rem] ">
+										<svg
+											width="43"
+											height="41"
+											viewBox="0 0 53 51"
+											fill="none"
+											className=" mx-auto z-0"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
+												fill="#03A9F4"
+											/>
+											<path
+												d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
+												stroke="white"
+												stroke-width="0.5"
+											/>
+										</svg>
+									</div>
+									<div className="w-full mx-auto -mt-1    mb-2">
+										<p
+											tabindex="0"
+											className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
+										>
+											C. Ronaldo
+										</p>
+										<p
+											tabindex="0"
+											className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
+										>
+											11.9
+										</p>
+									</div>
+								</div>
+
+								<div class="p-3  rounded mt-2 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
+									<div className="-mt-[3rem] ">
+										<svg
+											width="43"
+											height="41"
+											viewBox="0 0 53 51"
+											fill="none"
+											className=" mx-auto z-0"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
+												fill="#03A9F4"
+											/>
+											<path
+												d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
+												stroke="white"
+												stroke-width="0.5"
+											/>
+										</svg>
+									</div>
+									<div className="w-full mx-auto -mt-1    mb-2">
+										<p
+											tabindex="0"
+											className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
+										>
+											C. Ronaldo
+										</p>
+										<p
+											tabindex="0"
+											className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
+										>
+											11.9
+										</p>
+									</div>
+								</div>
+
+								<div class="p-3  rounded mt-2 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
+									<div className="-mt-[3rem] ">
+										<svg
+											width="43"
+											height="41"
+											viewBox="0 0 53 51"
+											fill="none"
+											className=" mx-auto z-0"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
+												fill="#03A9F4"
+											/>
+											<path
+												d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
+												stroke="white"
+												stroke-width="0.5"
+											/>
+										</svg>
+									</div>
+									<div className="w-full mx-auto -mt-1    mb-2">
+										<p
+											tabindex="0"
+											className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
+										>
+											C. Ronaldo
+										</p>
+										<p
+											tabindex="0"
+											className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
+										>
+											11.9
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div className="flex   py-10 mx-auto w-3/4">
+								<div class="p-3  rounded mt-5 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
+									<div className="-mt-[4rem] ">
+										<svg
+											width="43"
+											height="41"
+											viewBox="0 0 53 51"
+											fill="none"
+											className=" mx-auto z-0"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
+												fill="#03A9F4"
+											/>
+											<path
+												d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
+												stroke="white"
+												stroke-width="0.5"
+											/>
+										</svg>
+									</div>
+									<div className="w-full mx-auto -mt-1    mb-2">
+										<p
+											tabindex="0"
+											className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
+										>
+											C. Ronaldo
+										</p>
+										<p
+											tabindex="0"
+											className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
+										>
+											11.9
+										</p>
+									</div>
+								</div>
+
+								<div class="p-3  rounded mt-1 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
+									<div className="-mt-[4rem] ">
+										<svg
+											width="43"
+											height="41"
+											viewBox="0 0 53 51"
+											fill="none"
+											className=" mx-auto z-0"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
+												fill="#03A9F4"
+											/>
+											<path
+												d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
+												stroke="white"
+												stroke-width="0.5"
+											/>
+										</svg>
+									</div>
+									<div className="w-full mx-auto -mt-1    mb-2">
+										<p
+											tabindex="0"
+											className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
+										>
+											C. Ronaldo
+										</p>
+										<p
+											tabindex="0"
+											className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
+										>
+											11.9
+										</p>
+									</div>
+								</div>
+
+								<div class="p-3  rounded mt-1 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
+									<div className="-mt-[4rem] ">
+										<svg
+											width="43"
+											height="41"
+											viewBox="0 0 53 51"
+											fill="none"
+											className=" mx-auto z-0"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
+												fill="#03A9F4"
+											/>
+											<path
+												d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
+												stroke="white"
+												stroke-width="0.5"
+											/>
+										</svg>
+									</div>
+									<div className="w-full mx-auto -mt-1    mb-2">
+										<p
+											tabindex="0"
+											className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
+										>
+											C. Ronaldo
+										</p>
+										<p
+											tabindex="0"
+											className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
+										>
+											11.9
+										</p>
+									</div>
+								</div>
+
+								<div class="p-3  rounded mt-5 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
+									<div className="-mt-[4rem] ">
+										<svg
+											width="43"
+											height="41"
+											viewBox="0 0 53 51"
+											fill="none"
+											className=" mx-auto z-0"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
+												fill="#03A9F4"
+											/>
+											<path
+												d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
+												stroke="white"
+												stroke-width="0.5"
+											/>
+										</svg>
+									</div>
+									<div className="w-full mx-auto -mt-1    mb-2">
+										<p
+											tabindex="0"
+											className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
+										>
+											C. Ronaldo
+										</p>
+										<p
+											tabindex="0"
+											className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
+										>
+											11.9
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div className="flex   py-10 mx-auto w-1/2">
+								<div class="p-3  rounded -mt-5 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
+									<div className="-mt-[4rem] ">
+										<svg
+											width="43"
+											height="41"
+											viewBox="0 0 53 51"
+											fill="none"
+											className=" mx-auto z-0"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
+												fill="#03A9F4"
+											/>
+											<path
+												d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
+												stroke="white"
+												stroke-width="0.5"
+											/>
+										</svg>
+									</div>
+									<div className="w-full mx-auto -mt-1    mb-2">
+										<p
+											tabindex="0"
+											className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
+										>
+											C. Ronaldo
+										</p>
+										<p
+											tabindex="0"
+											className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
+										>
+											11.9
+										</p>
+									</div>
+								</div>
+
+								<div class="p-3  rounded mt-2 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
+									<div className="-mt-[4rem] ">
+										<svg
+											width="43"
+											height="41"
+											viewBox="0 0 53 51"
+											fill="none"
+											className=" mx-auto z-0"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
+												fill="#03A9F4"
+											/>
+											<path
+												d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
+												stroke="white"
+												stroke-width="0.5"
+											/>
+										</svg>
+									</div>
+									<div className="w-full mx-auto -mt-1    mb-2">
+										<p
+											tabindex="0"
+											className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
+										>
+											C. Ronaldo
+										</p>
+										<p
+											tabindex="0"
+											className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
+										>
+											11.9
+										</p>
+									</div>
+								</div>
+
+								<div class="p-3  rounded -mt-5 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
+									<div className="-mt-[4rem] ">
+										<svg
+											width="43"
+											height="41"
+											viewBox="0 0 53 51"
+											fill="none"
+											className=" mx-auto z-0"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
+												fill="#03A9F4"
+											/>
+											<path
+												d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
+												stroke="white"
+												stroke-width="0.5"
+											/>
+										</svg>
+									</div>
+									<div className="w-full mx-auto -mt-1    mb-2">
+										<p
+											tabindex="0"
+											className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
+										>
+											C. Ronaldo
+										</p>
+										<p
+											tabindex="0"
+											className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
+										>
+											11.9
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 
-						<div className="flex   py-10 mx-auto w-1/2">
-							<div class="p-3  rounded mt-2 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
-								<div className="-mt-[3rem] ">
-									<svg
-										width="43"
-										height="41"
-										viewBox="0 0 53 51"
-										fill="none"
-										className=" mx-auto z-0"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
-											fill="#03A9F4"
-										/>
-										<path
-											d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
-											stroke="white"
-											stroke-width="0.5"
-										/>
-									</svg>
-								</div>
-								<div className="w-full mx-auto -mt-1    mb-2">
-									<p
-										tabindex="0"
-										className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
-									>
-										C. Ronaldo
-									</p>
-									<p
-										tabindex="0"
-										className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
-									>
-										11.9
-									</p>
-								</div>
+						<div className="flex justify-between items-center mb-3 bg-gray-800/90 w-[46%] rounded-3xl mx-auto mt-12">
+							<div className="inline-flex rounded ">
+								<input
+									type="radio"
+									name="room_type"
+									id="fixtures"
+									// checked
+									hidden
+									onClick={(e) => {
+										e.preventDefault();
+										setOpenTab(1);
+									}}
+									data-toggle="tab"
+									role="tablist"
+								/>
+								<label
+									for="fixtures"
+									className={
+										"radio text-center  self-center py-3 px-12 rounded-3xl cursor-pointer  hover:opacity-75 " +
+										(openTab === 1
+											? "text-gray-800 bg-white "
+											: "text-white bg-gray-800/20 ")
+									}
+								>
+									Pitch View
+								</label>
 							</div>
-
-							<div class="p-3  rounded mt-2 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
-								<div className="-mt-[3rem] ">
-									<svg
-										width="43"
-										height="41"
-										viewBox="0 0 53 51"
-										fill="none"
-										className=" mx-auto z-0"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
-											fill="#03A9F4"
-										/>
-										<path
-											d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
-											stroke="white"
-											stroke-width="0.5"
-										/>
-									</svg>
-								</div>
-								<div className="w-full mx-auto -mt-1    mb-2">
-									<p
-										tabindex="0"
-										className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
-									>
-										C. Ronaldo
-									</p>
-									<p
-										tabindex="0"
-										className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
-									>
-										11.9
-									</p>
-								</div>
+							<div className="inline-flex rounded -ml-1">
+								<input
+									type="radio"
+									name="room_type"
+									id="fdr"
+									hidden
+									onClick={(e) => {
+										e.preventDefault();
+										setOpenTab(2);
+									}}
+									data-toggle="tab"
+									role="tablist"
+								/>
+								<label
+									for="fdr"
+									className={
+										"radio text-center  self-center py-3 px-12 rounded-3xl cursor-pointer   hover:opacity-75 " +
+										(openTab === 2
+											? "text-gray-800 bg-white "
+											: "text-white bg-gray-800/20 ")
+									}
+								>
+									List View
+								</label>
 							</div>
-
-							<div class="p-3  rounded mt-2 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
-								<div className="-mt-[3rem] ">
-									<svg
-										width="43"
-										height="41"
-										viewBox="0 0 53 51"
-										fill="none"
-										className=" mx-auto z-0"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
-											fill="#03A9F4"
-										/>
-										<path
-											d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
-											stroke="white"
-											stroke-width="0.5"
-										/>
-									</svg>
-								</div>
-								<div className="w-full mx-auto -mt-1    mb-2">
-									<p
-										tabindex="0"
-										className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
-									>
-										C. Ronaldo
-									</p>
-									<p
-										tabindex="0"
-										className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
-									>
-										11.9
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div className="flex   py-10 mx-auto w-3/4">
-							<div class="p-3  rounded mt-5 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
-								<div className="-mt-[4rem] ">
-									<svg
-										width="43"
-										height="41"
-										viewBox="0 0 53 51"
-										fill="none"
-										className=" mx-auto z-0"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
-											fill="#03A9F4"
-										/>
-										<path
-											d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
-											stroke="white"
-											stroke-width="0.5"
-										/>
-									</svg>
-								</div>
-								<div className="w-full mx-auto -mt-1    mb-2">
-									<p
-										tabindex="0"
-										className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
-									>
-										C. Ronaldo
-									</p>
-									<p
-										tabindex="0"
-										className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
-									>
-										11.9
-									</p>
-								</div>
-							</div>
-
-							<div class="p-3  rounded mt-1 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
-								<div className="-mt-[4rem] ">
-									<svg
-										width="43"
-										height="41"
-										viewBox="0 0 53 51"
-										fill="none"
-										className=" mx-auto z-0"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
-											fill="#03A9F4"
-										/>
-										<path
-											d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
-											stroke="white"
-											stroke-width="0.5"
-										/>
-									</svg>
-								</div>
-								<div className="w-full mx-auto -mt-1    mb-2">
-									<p
-										tabindex="0"
-										className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
-									>
-										C. Ronaldo
-									</p>
-									<p
-										tabindex="0"
-										className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
-									>
-										11.9
-									</p>
-								</div>
-							</div>
-
-							<div class="p-3  rounded mt-1 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
-								<div className="-mt-[4rem] ">
-									<svg
-										width="43"
-										height="41"
-										viewBox="0 0 53 51"
-										fill="none"
-										className=" mx-auto z-0"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
-											fill="#03A9F4"
-										/>
-										<path
-											d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
-											stroke="white"
-											stroke-width="0.5"
-										/>
-									</svg>
-								</div>
-								<div className="w-full mx-auto -mt-1    mb-2">
-									<p
-										tabindex="0"
-										className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
-									>
-										C. Ronaldo
-									</p>
-									<p
-										tabindex="0"
-										className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
-									>
-										11.9
-									</p>
-								</div>
-							</div>
-
-							<div class="p-3  rounded mt-5 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
-								<div className="-mt-[4rem] ">
-									<svg
-										width="43"
-										height="41"
-										viewBox="0 0 53 51"
-										fill="none"
-										className=" mx-auto z-0"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
-											fill="#03A9F4"
-										/>
-										<path
-											d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
-											stroke="white"
-											stroke-width="0.5"
-										/>
-									</svg>
-								</div>
-								<div className="w-full mx-auto -mt-1    mb-2">
-									<p
-										tabindex="0"
-										className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
-									>
-										C. Ronaldo
-									</p>
-									<p
-										tabindex="0"
-										className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
-									>
-										11.9
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div className="flex   py-10 mx-auto w-1/2">
-							<div class="p-3  rounded -mt-5 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
-								<div className="-mt-[4rem] ">
-									<svg
-										width="43"
-										height="41"
-										viewBox="0 0 53 51"
-										fill="none"
-										className=" mx-auto z-0"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
-											fill="#03A9F4"
-										/>
-										<path
-											d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
-											stroke="white"
-											stroke-width="0.5"
-										/>
-									</svg>
-								</div>
-								<div className="w-full mx-auto -mt-1    mb-2">
-									<p
-										tabindex="0"
-										className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
-									>
-										C. Ronaldo
-									</p>
-									<p
-										tabindex="0"
-										className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
-									>
-										11.9
-									</p>
-								</div>
-							</div>
-
-							<div class="p-3  rounded mt-2 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
-								<div className="-mt-[4rem] ">
-									<svg
-										width="43"
-										height="41"
-										viewBox="0 0 53 51"
-										fill="none"
-										className=" mx-auto z-0"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
-											fill="#03A9F4"
-										/>
-										<path
-											d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
-											stroke="white"
-											stroke-width="0.5"
-										/>
-									</svg>
-								</div>
-								<div className="w-full mx-auto -mt-1    mb-2">
-									<p
-										tabindex="0"
-										className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
-									>
-										C. Ronaldo
-									</p>
-									<p
-										tabindex="0"
-										className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
-									>
-										11.9
-									</p>
-								</div>
-							</div>
-
-							<div class="p-3  rounded -mt-5 mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
-								<div className="-mt-[4rem] ">
-									<svg
-										width="43"
-										height="41"
-										viewBox="0 0 53 51"
-										fill="none"
-										className=" mx-auto z-0"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334L46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475Z"
-											fill="#03A9F4"
-										/>
-										<path
-											d="M11.2572 24.8544H1V22.0601L3.79743 9.9518C3.79743 9.9518 5.66238 6.22616 7.52733 5.29475C9.39228 4.36334 20.582 0.637695 20.582 0.637695C25.105 2.76353 27.5672 4.23143 33.6366 0.637695L42.9614 4.36334C42.9614 4.36334 45.7588 7.15757 46.6913 8.08898C47.6238 9.02039 49.4887 11.8146 50.4212 13.6774C51.3537 15.5403 52.2861 24.8544 52.2861 24.8544L50.4212 25.7858H42.0289L41.0964 22.0601V50.0025H11.2572V24.8544ZM11.2572 24.8544V22.0601"
-											stroke="white"
-											stroke-width="0.5"
-										/>
-									</svg>
-								</div>
-								<div className="w-full mx-auto -mt-1    mb-2">
-									<p
-										tabindex="0"
-										className="focus:outline-none text-xs font-light py-1 mt-1 -ml-9 pl-5 tracking-wider rounded text-gray-100 bg-[#33175A]"
-									>
-										C. Ronaldo
-									</p>
-									<p
-										tabindex="0"
-										className="focus:outline-none text-[.65rem] text-center  -ml-9 -mb-6 font-light leading-normal  text-gray-100 bg-[#33175A]/100 bg-gradient-to-l from-[#6E4BEC7D]/50 via-[#F2F6FF]/50 to-[#6E4BEC7D]/50"
-									>
-										11.9
-									</p>
-								</div>
+							<div className="inline-flex rounded -ml-1">
+								<input
+									type="radio"
+									name="room_type"
+									id="date"
+									hidden
+									onClick={(e) => {
+										e.preventDefault();
+										setOpenTab(3);
+									}}
+									data-toggle="tab"
+									role="tablist"
+								/>
+								<label
+									for="date"
+									className={
+										"radio text-center  self-center py-3 px-12 rounded-3xl cursor-pointer   hover:opacity-75 " +
+										(openTab === 3
+											? "text-gray-800 bg-white "
+											: "text-white bg-gray-800/20 ")
+									}
+								>
+									Date
+								</label>
 							</div>
 						</div>
 					</div>
