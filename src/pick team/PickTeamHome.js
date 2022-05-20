@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import MainBreadCrumb from "../components/MainBreadCrumb";
 import MainFooter from "../components/MainFooter";
 
-function PickTeam() {
+function PickTeamHome() {
 	const [openTab, setOpenTab] = React.useState(1);
 	return (
 		<div className="bg-[#E5ECFA]/100 h-3/4">
@@ -12,174 +12,23 @@ function PickTeam() {
 
 			<div className="container">
 				<div className="flex">
-					<div className="container max-w-4xl mt-10 ">
+					<div className="container max-w-4xl mt-10  ">
 						<div>
 							<h1 class="font-medium text-xl ml-16 text-gray-700 mb-5  ">
 								Pick Team - KingsMen City
 							</h1>
-							<div className="flex flex-col md:flex-row justify-end ml-28">
-								<h1 className="font-bold text-xl text-center text-gray-700 w-4/6 pt-3 px-5 ">
-									Gameweek 24
+							<div className="flex  md:flex-row justify-center ml-16 rounded shadow-xl shadow-violet-800 bg-[#6E4BEC]">
+								<h1 className="font-bold text-xl text-center text-gray-100 w-5/6 py-3 px-2 ">
+									Gameweek 27:{" "}
+									<span className="pl-3 font-normal">Sat 6 Mar 12:00</span>
 								</h1>
-								<div className="w-full mx-2 flex-1 svelte-1l8159u">
-									<button
-										className="text-base  hover:scale-110 focus:outline-none flex justify-center px-5 py-2 rounded font-bold cursor-pointer 
-                                
-                                hover:bg-blue-500 shadow
-                                bg-[#EFEFEF] text-gray-900
-                                 duration-200 ease-in-out 
-                                 transition"
-									>
-										<div className="flex font-sans text-xs font-semibold px-5">
-											<span className="pt-1"> Next</span>
-											<span className="ml-20 material-icons hover:text-gray-100 ">
-												arrow_forward
-											</span>{" "}
-										</div>
-									</button>
-								</div>
 							</div>
 
-							<div className="bg-[#EFEFEF] ml-16 mt-8 p-4">
-								<div className="flex justify-between">
-									<div class="  px-1  ">
-										<div class="bg-white rounded-sm border py-2 px-10 w-full ">
-											<div class="flex items-center  border-gray-300 ">
-												<div class="justify-center w-full pb-2">
-													<div class=" w-full">
-														<p
-															tabindex="0"
-															class="focus:outline-none text-md leading-normal pt-2 text-gray-700"
-														>
-															Final Points
-														</p>
-													</div>
-
-													<div class=" text-center pt-3">
-														<p
-															tabindex="0"
-															class="focus:outline-none  text-2xl font-medium leading-5 text-red-800"
-														>
-															62
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="  px-1  ">
-										<div class="bg-white rounded-sm border  py-2 px-5 w-full ">
-											<div class="flex items-center border-b border-gray-300 ">
-												<div class="flex items-start justify-between w-full pb-2">
-													<div class=" w-full">
-														<p
-															tabindex="0"
-															class="focus:outline-none text-sm leading-normal pt-1 text-gray-500"
-														>
-															Average Pts
-														</p>
-													</div>
-
-													<div class=" pl-40  text-right">
-														<p
-															tabindex="0"
-															class="focus:outline-none  text-md font-medium leading-5 text-gray-800"
-														>
-															81
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="flex items-center border-gray-300 ">
-												<div class="flex items-start justify-between w-full pt-3 ">
-													<div class=" ">
-														<p
-															tabindex="0"
-															class="focus:outline-none text-sm leading-normal pt-1 text-gray-500"
-														>
-															Average Pts
-														</p>
-													</div>
-
-													<div class=" pl-40    text-right">
-														<p
-															tabindex="0"
-															class="focus:outline-none  text-md font-medium leading-5 text-red-800"
-														>
-															164
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="  px-1  ">
-										<div class="bg-white rounded-sm border py-2 px-5 w-full ">
-											<div class="flex items-center border-b border-gray-300 ">
-												<div class="flex items-start justify-between w-full pb-2">
-													<div class=" w-full">
-														<p
-															tabindex="0"
-															class="focus:outline-none text-sm leading-normal pt-1 text-gray-500"
-														>
-															Average Pts
-														</p>
-													</div>
-
-													<div class=" pl-40   text-right">
-														<p
-															tabindex="0"
-															class="focus:outline-none  text-md font-medium leading-5 text-gray-800"
-														>
-															81
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="flex items-center border-gray-300 ">
-												<div class="flex items-start justify-between w-full pt-3 ">
-													<div class=" ">
-														<p
-															tabindex="0"
-															class="focus:outline-none text-sm leading-normal pt-1 text-gray-500"
-														>
-															Average Pts
-														</p>
-													</div>
-
-													<div class=" pl-40    text-right">
-														<p
-															tabindex="0"
-															class="focus:outline-none  text-md font-medium leading-5 text-red-800"
-														>
-															164
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div className="w-full mx-2 mt-5 flex justify-end svelte-1l8159u">
-									<button
-										className="text-base  hover:scale-110 focus:outline-none flex justify-center px-5 py-3 rounded-3xl font-bold cursor-pointer 
-                                
-                                hover:bg-blue-500 shadow
-                                bg-[#FFFFFF] text-gray-900
-                                 duration-200 ease-in-out 
-                                 transition"
-									>
-										<div className="flex font-sans text-xs font-semibold px-5">
-											<span className="pt-1"> Kings of the Gameweek</span>
-											<span className="ml-20 material-icons text-red-800 hover:text-gray-100 ">
-												arrow_forward
-											</span>{" "}
-										</div>
-									</button>
-								</div>
+							<div className="flex  md:flex-row justify-center ml-16 mt-6 bg-[#E1CEFF]">
+								<h1 className="font-medium text-sm text-center mx-auto text-gray-700 w-5/6 py-2 px-2">
+									To change your captain use the menu which appears when
+									clicking on the players's shirt
+								</h1>
 							</div>
 						</div>
 
@@ -2420,7 +2269,7 @@ function PickTeam() {
 										11.9
 									</p>
 								</div>
-                <p className="pt-5">GK</p>
+								<p className="pt-5">GK</p>
 							</div>
 
 							<div class="p-3  -mt-12 rounded  mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
@@ -2476,7 +2325,7 @@ function PickTeam() {
 										11.9
 									</p>
 								</div>
-                <p className="pt-5">1</p>
+								<p className="pt-5">1</p>
 							</div>
 
 							<div class="p-3 -mt-12  rounded   mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
@@ -2532,7 +2381,7 @@ function PickTeam() {
 										11.9
 									</p>
 								</div>
-                <p className="pt-5">2</p>
+								<p className="pt-5">2</p>
 							</div>
 
 							<div class="p-3  -mt-12 rounded  mx-auto space-x-6  h-10 hover:scale-105 transition transform duration-500 cursor-pointer">
@@ -2588,31 +2437,71 @@ function PickTeam() {
 										11.9
 									</p>
 								</div>
-                <p className="pt-5">3</p>
+								<p className="pt-5">3</p>
+							</div>
+						</div>
+
+						<div class="flex flex-col md:flex-row py-10 ml-10">
+							<div class="w-full mx-2 flex-1 svelte-1l8159u">
+								<h1 className="text-center text-md pb-4">Bench Boast</h1>
+								<button
+									class="text-base shadow-xl shadow-indigo-500/50 hover:scale-110 focus:outline-none flex justify-center px-20 py-4 rounded font-bold cursor-pointer 
+                                
+                                hover:bg-blue-500 
+                                bg-[#378852] text-gray-200
+                                 duration-200 ease-in-out 
+                                 transition"
+								>
+									<div class="font-sans text-sm font-semibold px-10">PLAY</div>
+								</button>
 							</div>
 
-              
+							<div class="w-full mx-2 flex-1 svelte-1l8159u">
+								<h1 className="text-center text-md pb-4">Triple Captain</h1>
+								<button
+									class="text-base shadow-xl shadow-indigo-500/50 hover:scale-110 focus:outline-none flex justify-center px-20 py-4 rounded font-bold cursor-pointer 
+                                
+                                hover:bg-blue-500 
+                                bg-[#378852] text-gray-200
+                                 duration-200 ease-in-out 
+                                 transition"
+								>
+									<div class="font-sans text-sm font-semibold px-10">PLAY</div>
+								</button>
+							</div>
+							<div class="w-full mx-2 flex-1 svelte-1l8159u">
+								<h1 className="text-center text-md pb-4">Free Hit</h1>
+								<button
+									class="text-base shadow-xl shadow-indigo-500/50 hover:scale-110 focus:outline-none flex justify-center px-20 py-4 rounded font-bold cursor-pointer 
+                                
+                                hover:bg-blue-500 
+                                bg-[#378852] text-gray-200
+                                 duration-200 ease-in-out 
+                                 transition"
+								>
+									<div class="font-sans text-sm font-semibold px-10">PLAY</div>
+								</button>
+							</div>
 						</div>
-						<div className="  h-[50%] bg-gradient-to-br from-[#FFFFFF]/100 via-[#F2F6FF]/50 to-[#E5ECFA]/100 border-inherit rounded-xl shadow-2xl shadow-indigo-500/50 ml-16 mt-10 mb-20  px-4 py-6 lg:px-2  ">
-							<h1 class="font-medium text-3xl ml-5 text-gray-700 mb-10  mt-5">
-								Automatic Substitutions
-							</h1>
 
-							<table class=" w-[95%] mx-auto">
-								<tr class="w-1/2 bg-stone-300 ">
-									<th class="p-2 font-medium text-sm text-left">Player Out</th>
-									<th class="p-2 font-medium text-sm text-left">Player Out</th>
-								</tr>
-								<tr class="border-b border-gray-300 py-2">
-									<td class="p-2 text-left text-gray-600">Justine</td>
-									<td class="p-2 text-left text-gray-600">Wan-Bissaka</td>
-								</tr>
-								<tr class="border-b border-gray-300 py-2">
-									<td class="p-2 text-left text-gray-600">Antonio</td>
-									<td class="p-2 text-left text-gray-600">Harrison</td>
-								</tr>
-							</table>
+						<div class="w-full mx-auto  py-5 flex-1 svelte-1l8159u">
+							<button
+								class="text-base shadow hover:scale-110 focus:outline-none flex mx-auto justify-center px-28 py-4 rounded font-bold cursor-pointer 
+                                
+										hover:bg-blue-500 
+										bg-[#E2E2E2] text-gray-700
+										duration-200 ease-in-out 
+										transition"
+							>
+								<div class="font-sans text-sm font-normal px-10">
+									Save Your Team
+								</div>
+							</button>
+						</div>
 
+                        <hr class="mt-10 ml-14 max-w-4xl rounded-lg border-b-2 border-[#dbdbdb] mx-auto " />
+
+						<div className="  h-[43%] bg-gradient-to-br from-[#FFFFFF]/100 via-[#F2F6FF]/50 to-[#E5ECFA]/100 border-inherit rounded-xl shadow-2xl shadow-indigo-500/50 ml-16 mt-10 mb-20  px-4 py-6 lg:px-2  ">
 							<h1 class="font-bold text-3xl mx-auto text-center text-gray-900 mt-10  ">
 								Fixtures
 							</h1>
@@ -3556,4 +3445,4 @@ function PickTeam() {
 	);
 }
 
-export default PickTeam;
+export default PickTeamHome;
