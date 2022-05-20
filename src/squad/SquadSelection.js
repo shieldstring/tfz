@@ -79,7 +79,8 @@ function SquadSelection() {
 						style={{
 							backgroundImage: 'url("/img/pitch-md.png")',
 							backgroundRepeat: "no-repeat",
-							backgroundSize: "fit",
+							backgroundSize: "cover",
+							backgroundPosition: "center center"
 						}}
 					>
 						<div className="flex justify-center items-center mb-3  mx-auto mt-12">
@@ -88,7 +89,7 @@ function SquadSelection() {
 									type="radio"
 									name="room_type"
 									id="fixtures"
-									checked
+									// checked
 									hidden
 									onClick={(e) => {
 										e.preventDefault();
@@ -99,7 +100,10 @@ function SquadSelection() {
 								/>
 								<label
 									for="fixtures"
-									className="radio text-center text-gray-100 self-center py-3 px-12 border cursor-pointer bg-red-800 hover:opacity-75"
+									className={"radio text-center  self-center py-3 px-12 border cursor-pointer  hover:opacity-75 " + 
+									(openTab === 1
+										? "text-red-800 bg-white"
+										: "text-white bg-red-800")}
 								>
 									Pitch View
 								</label>
@@ -119,7 +123,10 @@ function SquadSelection() {
 								/>
 								<label
 									for="fdr"
-									className="radio text-center text-gray-100 self-center py-3 px-12 border rounded-sm cursor-pointer bg-red-800  hover:opacity-75"
+									className={"radio text-center  self-center py-3 px-12 border rounded-sm cursor-pointer   hover:opacity-75 " +
+									 (openTab === 2
+										? "text-red-800 bg-white"
+										: "text-white bg-red-800")}
 								>
 									List View
 								</label>
@@ -669,7 +676,7 @@ function SquadSelection() {
 												<div class=" mx-auto">
 													<div class="pt-4">
 														<div class="-mx-4 sm:-mx-8 px-1 sm:px-8 py-4 overflow-x-auto">
-															<div class="inline-block min-w-full shadow rounded-lg h-[42rem]">
+															<div class="inline-block min-w-full shadow rounded-lg overflow-y-scroll   overflow-x-auto  w-full h-[42rem]">
 																<table class="min-w-full leading-normal">
 																	<thead>
 																		<tr className="bg-red-700">
@@ -1770,7 +1777,7 @@ function SquadSelection() {
 																						tabindex="0"
 																						className="focus:outline-none text-xs text-left leading-normal text-gray-500 flex align-middle"
 																					>
-																						<span className=" align-middle  material-icons text-2xl text-red-500 ">
+																						<span className=" align-middle  material-icons text-2xl text-[#347E25] ">
 																							info_outline
 																						</span>
 
@@ -1840,7 +1847,7 @@ function SquadSelection() {
 																						tabindex="0"
 																						className="focus:outline-none text-xs text-left leading-normal text-gray-500 flex align-middle"
 																					>
-																						<span className=" align-middle  material-icons text-2xl text-red-500 ">
+																						<span className=" align-middle  material-icons text-2xl text-[#347E25] ">
 																							info_outline
 																						</span>
 
@@ -1910,7 +1917,7 @@ function SquadSelection() {
 																						tabindex="0"
 																						className="focus:outline-none text-xs text-left leading-normal text-gray-500 flex align-middle"
 																					>
-																						<span className=" align-middle  material-icons text-2xl text-red-500 ">
+																						<span className=" align-middle  material-icons text-2xl text-[#347E25] ">
 																							info_outline
 																						</span>
 
@@ -1980,7 +1987,7 @@ function SquadSelection() {
 																						tabindex="0"
 																						className="focus:outline-none text-xs text-left leading-normal text-gray-500 flex align-middle"
 																					>
-																						<span className=" align-middle  material-icons text-2xl text-red-500 ">
+																						<span className=" align-middle  material-icons text-2xl text-[#347E25] ">
 																							info_outline
 																						</span>
 

@@ -21,6 +21,8 @@ import JoinPublicLeague from "./league/JoinPublicLeague";
 import SquadSelection from "./squad/SquadSelection";
 import ListView from "./squad/ListView";
 import TabsRender from "./squad/ListView";
+import Transfer from "./pages/Transfer";
+import SelectCaptain from "./pages/SelectCaptain";
 
 
 
@@ -38,10 +40,11 @@ function App() {
             <Route path="favourite" element={ <Favourite /> } /> 
             <Route path="agreement" element={ <Agreement /> } />
             <Route path="nameteam" element={ <NameTeam /> } />
+            <Route path="selectcaptain" element={ <SelectCaptain /> } />
             <Route path="account" element={ <YourAccount/> } />
 
             <Route path="squad" element={ <SquadSelection /> } />
-            <Route path="listview" element={ <TabsRender /> } />
+            <Route path="transfer" element={ <Transfer /> } />
 
 
             <Route path="league" element={ <CreateLeague/> } />
