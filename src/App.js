@@ -23,6 +23,7 @@ import ListView from "./squad/ListView";
 import TabsRender from "./squad/ListView";
 import Transfer from "./pages/Transfer";
 import SelectCaptain from "./pages/SelectCaptain";
+import PickTeam from "./pick team/PickTeam";
 
 
 
@@ -45,7 +46,7 @@ function App() {
 
             <Route path="squad" element={ <SquadSelection /> } />
             <Route path="transfer" element={ <Transfer /> } />
-
+            <Route path="pickteam" element={ <PickTeam /> } />
 
             <Route path="league" element={ <CreateLeague/> } />
             <Route path="joinleague" element={ <JoinLeague/> } />
